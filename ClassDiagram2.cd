@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mixer_simulation.BaseBlock">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Mixer_simulation.BaseBlock.IOBus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BaseBlock.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Mixer_simulation.BaseBlock.ChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BaseBlock.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Mixer_simulation.BaseBlock.ChangesAppliedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BaseBlock.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAEQAAAA=</HashCode>
+      <FileName>BaseBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.BlockIOPortChanged">
+    <Position X="14.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BaseBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TransferBlock">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>BaseBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.DiscreteTrasferBlock">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>BaseBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.ControledObject">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAABgAIBACAAAAAAAQAAAAAAAAAIAQAACAAAAA=</HashCode>
+      <FileName>ControledObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.MainObject">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.BaseBlock" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="1.938" />
+        <Point X="12.24" Y="1.938" />
+        <Point X="12.24" Y="0.26" />
+        <Point X="14.875" Y="0.26" />
+        <Point X="14.875" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>wAABAQgAAAAABIADAAAIAAgAIAgCAAAAAAQAAEAgAQA=</HashCode>
+      <FileName>MainObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.MixerCoeficients">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAACRAIAAAAAAAkIAAEAEARA=</HashCode>
+      <FileName>MixerCoeficients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Clamp">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.TransferBlock" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="8.5" Y="1.375" />
+        <Point X="8.26" Y="1.375" />
+        <Point X="8.26" Y="0.26" />
+        <Point X="5.5" Y="0.26" />
+        <Point X="5.5" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>TypicalBlocks\Clamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.DAperiodic">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.DiscreteTrasferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.562" />
+        <Point X="8.25" Y="3.562" />
+        <Point X="8.25" Y="7.128" />
+        <Point X="3.25" Y="7.128" />
+        <Point X="3.25" Y="5.069" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAQA=</HashCode>
+      <FileName>TypicalBlocks\DAperiodic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Delay">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.DiscreteTrasferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.375" />
+        <Point X="7.914" Y="3.375" />
+        <Point X="7.914" Y="6.972" />
+        <Point X="5" Y="6.972" />
+        <Point X="5" Y="6.098" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAABACAAABABAAAAAAAAAAAAAAAAAAAAAQAAEAAAQA=</HashCode>
+      <FileName>TypicalBlocks\Delay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Difference">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.DiscreteTrasferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.625" Y="4.434" />
+        <Point X="9.625" Y="4.875" />
+        <Point X="10.875" Y="4.875" />
+        <Point X="10.875" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>TypicalBlocks\Difference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Gain">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.TransferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.125" Y="0.5" />
+        <Point X="9.125" Y="0.073" />
+        <Point X="3.812" Y="0.073" />
+        <Point X="3.812" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEAAAAA=</HashCode>
+      <FileName>TypicalBlocks\Gain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Integral">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.DiscreteTrasferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.438" Y="4.434" />
+        <Point X="9.438" Y="5.151" />
+        <Point X="9.438" Y="5.151" />
+        <Point X="9.438" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>TypicalBlocks\Integral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.Noise">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAEAAAAA=</HashCode>
+      <FileName>TypicalBlocks\Noise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mixer_simulation.TypicalBlocks.PIDregulator">
+    <Position X="6" Y="3" Width="1.5" />
+    <InheritanceLine Type="Mixer_simulation.DiscreteTrasferBlock" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.125" />
+        <Point X="7.705" Y="3.125" />
+        <Point X="7.705" Y="6.858" />
+        <Point X="6.625" Y="6.858" />
+        <Point X="6.625" Y="6.608" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAABQAAAARAAAAAIAEAAAAAAAQAAEAAgAI=</HashCode>
+      <FileName>TypicalBlocks\PIDregulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
